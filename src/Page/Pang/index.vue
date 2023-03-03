@@ -10,9 +10,6 @@
     </a-collapse>
 </template>
 <script lang="ts" setup>
-import { ref, watch } from "vue"
-
-
 const activeKey = ref(['1']);
 
 watch(activeKey, val => {

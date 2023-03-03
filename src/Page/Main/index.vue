@@ -12,17 +12,7 @@
                     <div>
                         <span>🤝 参与共建</span>
                     </div>
-                    <div class="structure">
-                        <div>
-                            <div>$ &nbsp;&nbsp;&nbsp;&nbsp;git clone git@github.com:alibaba/hooks.git</div>
-                            <a-typography-paragraph :copyable="{ tooltip: false }" class="house copy">
-                                <span style="opacity: 0;cursor: pointer;">git clone git@github.com:alibaba/hooks.git</span>
-                            </a-typography-paragraph>
-                        </div>
-                        <div>$ &nbsp;&nbsp;&nbsp;&nbsp;cd hooks</div>
-                        <div>$ &nbsp;&nbsp;&nbsp;&nbsp;pnpm run init</div>
-                        <div>$ &nbsp;&nbsp;&nbsp;&nbsp;pnpm start</div>
-                    </div>
+                    <Code lineNumber :code="['git clone git@github.com:alibaba/hooks.git', 'cd hooks', 'pnpm run init', 'pnpm start']" />
                 </div>
             </div>
             <div class="after">
@@ -35,7 +25,6 @@
 </template>
 
 <script setup lang="ts">
-
 </script>
 
 <style scoped lang="less">

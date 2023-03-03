@@ -23,9 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
-import {useRouter} from "vue-router";
 const router = useRouter();
+
 interface Ilink{
   link:string
   text:string
@@ -35,9 +34,9 @@ const props = defineProps({
    link:{
     type:Object as Object as PropType<Ilink>,
     required: true
-    
    }
 })
+
 const nav = ()=>{
  window.open(props.link.link)
 }

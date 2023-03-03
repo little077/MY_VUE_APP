@@ -65,12 +65,9 @@
 </template>
 
 <script setup lang="ts">
-import Button from "./Button.vue";
-import { onMounted, ref, onUpdated ,reactive} from 'vue';
-import type { Ref } from 'vue';
 import unicodeImg from "@/assets/img/unicode.png";
 import tranUnicode from "@/assets/img/tranUnicode.png"
-const InstRig: Ref<HTMLElement | null> = ref(null);
+const InstRig = ref<HTMLElement | null>(null);
 
 const activeNames = ref([''])
 const handleChange = (val: string[]) => {
