@@ -25,7 +25,6 @@
 </template>
 
 <script setup lang="ts">
-import Code from '@/components/Code.vue'
 </script>
 
 <style scoped lang="less">

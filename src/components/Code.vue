@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { ref, toRefs } from 'vue'
-
 interface Props {
   code: string[]
   lineNumber?: boolean
   copyable?: boolean
   linePrefix?: string
-  background: string
+  background?: string
 }
 const props = withDefaults(defineProps<Props>(), {
   code: () => [''],

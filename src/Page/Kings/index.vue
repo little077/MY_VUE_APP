@@ -15,19 +15,12 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter ,useRoute} from "vue-router";
-import { ref, onMounted, onUpdated ,watch} from "vue";
 import { useUtilsStore } from '@/Store/utils';
-import { storeToRefs } from 'pinia'
-
-import type {Ref} from "vue";
 
 const router = useRouter();
 const UtilsStore = useUtilsStore();
 
-
-
-const InstRig :Ref<HTMLElement |null> = ref(null);
+const InstRig = ref<HTMLElement |null>(null);
 
 const { activeUtils, } = storeToRefs(UtilsStore)
 
@@ -39,13 +32,9 @@ const nav = (str: string, num: number) => {
   // })
 }
 
-
 const changeScroll = (e :Element)=>{
   // console.log((InstRig.value?.scroll))
 }
-
-
-
 </script>
 
 <style scoped lang="less">

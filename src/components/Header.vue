@@ -28,8 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter} from "vue-router";
 const router = useRouter();
 const activeIndex = ref('')
 const handleSelect = (key: string, keyPath: string[]) => {
